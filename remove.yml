@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+  - name: remove nginx
+    yum:
+      name: nginx
+      state: absent
+    become: true
+    become_user: root
