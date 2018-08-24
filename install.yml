@@ -1,7 +1,7 @@
 ---
 - hosts: all
   tasks:
-  - name: install nginx
+  - name: install postfix
     package:
-      name: nginx
+      name: postfix
       state: present

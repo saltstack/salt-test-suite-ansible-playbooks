@@ -1,9 +1,9 @@
 ---
 - hosts: all
   tasks:
-  - name: remove nginx
+  - name: remove postfix
     yum:
-      name: nginx
+      name: postfix
       state: absent
     become: true
     become_user: root
