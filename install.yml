@@ -5,3 +5,5 @@
     yum:
       name: postfix
       state: present
+    become: true
+    become_user: root
